@@ -12,7 +12,7 @@ pipeline {
        
         stage('Slack') {
             steps {
-                slackSend color: 'good', message: 'All files has been zipped successfully'
+                slackSend color: 'good', message: 'Jenkins agent-script-pipeline, All files has been zipped successfully'
             }
         }
 
