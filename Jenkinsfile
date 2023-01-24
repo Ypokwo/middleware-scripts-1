@@ -9,7 +9,13 @@ pipeline {
             
             }
         }
-         
-    }
+       
+        stage('Slack') {
+            steps {
+                slackSend color: 'good', message: 'All files has been zipped successfully'
+            }
+        }
+
+     }
   }
 
